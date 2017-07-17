@@ -1,4 +1,4 @@
-# wordpress
+# Checklist Wrdpress Plugin
 
 This is the Github repository for the official Checklist Wordpress plugin.
 
