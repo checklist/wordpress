@@ -2,15 +2,15 @@ Turn any list in your blog to a beautiful interactive checklist. Print, Use, Sha
 
 People love lists! And if you run a successful blog, you probably have many lists throughout your posts. But those lists tend to be boring bullet lists such as:
 
-![Bullet List](assets/screenshot-1.png "We all have these boring bullet lists throughout our blog")
+![Bullet List](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-1.png)
 
 And here is what this list would look once you let the Checklist plugin render it:
 
-![Beautiful Interactive Checklist](assets/screenshot-2.png "With the Checklist Plugin you have a beautiful interactive checklist")
+![Beautiful Interactive Checklist](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-2.png)
 
 And once your visitors save the list to their Checklist app (on iOS/ Android and Web), it will show as follows:
 
-![Checklist app](assets/screenshot-6.png "The Checklist app shows your list with a link back to your post")
+![Checklist app](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-6.png)
 
 Notice how you get the sticky relationship as the list includes a link back to your blog which the user will see every time they use the list (even months after).
 
@@ -29,17 +29,17 @@ Start by installing the plugin in your Plugins directory (or via the WordPress o
 
 Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy:
 
-![Selected list](assets/screenshot-3.png "Select any lists in the Wordpress post editor")
+![Selected list](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-3.png)
 
 Click on the Checklist button from the editor and get the Checklist popup to customize your checklist:
 
-![Checklist Plugin Popup](assets/screenshot-4.png "Click on the Checklist button from the Wordpress editor to get the customization popup")
+![Checklist Plugin Popup](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-4.png)
 
 And voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
 
 To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
 
-![Checklist Admin Settings](assets/screenshot-5.png "The Checklist Plugin Settings page allows you to customize the plugin to fit your blog look and feel")
+![Checklist Admin Settings](https://github.com/checklist/wordpress/blob/master/checklist-com/assets/screenshot-5.png)
 
 ### Where can I use this?
 
