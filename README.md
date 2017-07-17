@@ -13,7 +13,9 @@ The Checklisters
 
 ## Installation instructions:
 
-Download the latest Plugin version from : xxxx . Do NOT unzip the file.
+Click on Download on this page: https://github.com/checklist/wordpress/blob/master/release/checklist-com.zip . 
+
+Do NOT unzip the file.
 
 Click on the Plugins menu on left side of your Admin:
 
