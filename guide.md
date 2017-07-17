@@ -1,3 +1,5 @@
+# Checklist WordPress Plugin Guide
+
 Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. 100% Free with no account required.
 
 People love lists! And if you run a successful blog, you probably have many lists throughout your posts. But those lists tend to be boring bullet lists such as:
