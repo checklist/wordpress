@@ -27,7 +27,7 @@ Notice how you get the sticky relationship as the list includes a link back to y
 
 ### How It Works
 
-Start by installing the plugin in your Plugins directory (or via the WordPress one click install)
+Start by [installing the plugin in WordPress](https://github.com/checklist/wordpress#installation-instructions).
 
 Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy:
 
