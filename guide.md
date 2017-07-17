@@ -58,6 +58,8 @@ Tip: Why not end (and even start) each blog post with a list which summarizes th
 
 So get started with turning your boring lists into shining interactive checklists!
 
+[Installation Instructions](https://github.com/checklist/wordpress#installation-instructions)
+
 ### Support
 
 We are here to help you and are very eager to hear any feedback you may have. We are also happy to help you set the plugin. Just [Contact us](https://checklist.com/contact/).
