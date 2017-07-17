@@ -45,7 +45,7 @@ To customize the overall look and feel of the plugin to fit your blog's, head ov
 
 ### Where can I use this?
 
-Naturally, you can use this for any list on your site. Here are a few examples:
+Naturally, you can use this on any list on your site. Here are a few examples:
 * Action list. Things to do. E.g. DIY instructions
 * Shopping lists. Things you will need to get something accomplished. E.g. DIY lists
 * Recipes. Inclued a list of ingredients
