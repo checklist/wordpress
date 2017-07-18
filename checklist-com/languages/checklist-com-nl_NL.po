@@ -21,7 +21,7 @@ msgstr "Opslaan"
 
 #: checklist-com.php
 msgid "Print"
-msgstr "Print"
+msgstr "Afdrukken"
 
 #: checklist-com.php
 msgid ""

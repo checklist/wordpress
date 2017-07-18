@@ -134,7 +134,7 @@ class WP_Checklist {
     /*
       * Actions perform at loading of admin menu
       */
-    function wpa_add_menu() {
+    public function wpa_add_menu() {
 
         add_menu_page( 
             'Checklist',                // The value used to populate the browser's title bar when the menu page is active
@@ -142,10 +142,11 @@ class WP_Checklist {
             'manage_options',           // What roles are able to access the menu
             'checklist_settings',            // The ID used to bind submenu items to this menu 
             array(                      // The callback function used to render this menu
-                          __CLASS__,
+                          $this,
                          'wpa_page_file_path'
                         ), 
-            plugins_url('images/icon-white-16.png', __FILE__)
+            plugins_url('images/icon-white-16.png', __FILE__), // the icon
+            123                        // the position (anything above 100 is good)
         );
 
         add_submenu_page( 
@@ -155,9 +156,10 @@ class WP_Checklist {
             'manage_options',            // What roles are able to access this submenu item
             'checklist_settings',        // The ID used to represent this submenu item
             array(                       // The callback function used to render the options for this submenu item
-                          __CLASS__,
+                          $this,
                          'wpa_page_file_path'
-                        ), plugins_url('images/icon-white-16.png', __FILE__)
+                        ), 
+            plugins_url('images/icon-white-16.png', __FILE__)
         );
        
     }
@@ -193,17 +195,17 @@ class WP_Checklist {
         // wp_enqueue_script( 'wp-checklist-tinymce-js' );
     }
 
-    function wpa_add_buttons($plugin_array){
+    public function wpa_add_buttons($plugin_array){
         $plugin_array['checklist'] = plugins_url( '/js/tinymce-plugin.js',__FILE__ );
         return $plugin_array;    
     }
 
-    function wpa_register_buttons( $buttons ) {
+    public function wpa_register_buttons( $buttons ) {
         array_push( $buttons, 'checklistBox'); 
         return $buttons;
     }
 
-    function wpa_checklist_tinymce_extra_vars(){ ?>
+    public function wpa_checklist_tinymce_extra_vars(){ ?>
 		<script type="text/javascript">
 			var checklist_obj = <?php echo json_encode(
 				array(
@@ -485,13 +487,13 @@ class WP_Checklist {
     /*
      * Actions perform on activation of plugin
      */
-    function wpa_install() {
+    public function wpa_install() {
     }
 
     /*
      * Actions perform on de-activation of plugin
      */
-    function wpa_uninstall() {
+    public function wpa_uninstall() {
         // delete any settings we have made
         unregister_setting(
             'checklist_group',
