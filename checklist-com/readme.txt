@@ -119,3 +119,7 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 == Changelog ==
 = 1.0 =
 * Initial release
+
+== Upgrade Notice ==
+
+No instructions at this time
