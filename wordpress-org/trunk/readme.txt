@@ -1,6 +1,6 @@
 === Checklist ===
 Contributors: checklistcom
-Tags: checklist, lists
+Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
 Stable tag: trunk
@@ -12,17 +12,9 @@ Turn any list in your blog to a beautiful interactive checklist. Print, Use, Sha
 == Description ==
 Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. 100% Free with no account required.
 
-People love lists! And if you run a successful blog, you probably have many lists throughout your posts. But those lists tend to be boring bullet lists such as:
+People love lists! And if you run a successful blog, you probably have many lists throughout your posts. But those lists tend to be boring bullet lists such as screenshot 1 into an interactive checklist as shown in screenshot 2.
 
-![Bullet List](assets/screenshot-1.png "We all have these boring bullet lists throughout our blog")
-
-And here is what this list would look once you let the Checklist plugin render it:
-
-![Beautiful Interactive Checklist](assets/screenshot-2.png "With the Checklist Plugin you have a beautiful interactive checklist")
-
-And once your visitors save the list to their Checklist app (on iOS/ Android and Web), it will show as follows:
-
-![Checklist app](assets/screenshot-6.png "The Checklist app shows your list with a link back to your post")
+And once your visitors save the list to their Checklist app (on iOS/ Android and Web), it will show as in screenshot 6.
 
 Notice how you get the sticky relationship as the list includes a link back to your blog which the user will see every time they use the list (even months after).
 
@@ -39,23 +31,18 @@ Notice how you get the sticky relationship as the list includes a link back to y
 
 Start by installing the plugin in your Plugins directory (or via the WordPress one click install)
 
-Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy:
+Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy (see screenshot 3)
 
-![Selected list](assets/screenshot-3.png "Select any lists in the Wordpress post editor")
-
-Click on the Checklist button from the editor and get the Checklist popup to customize your checklist:
-
-![Checklist Plugin Popup](assets/screenshot-4.png "Click on the Checklist button from the Wordpress editor to get the customization popup")
+Click on the Checklist button from the editor and get the Checklist popup to customize your checklist (screenshot 4)
 
 And voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
 
-To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
+To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu (screenshot 5)
 
-![Checklist Admin Settings](assets/screenshot-5.png "The Checklist Plugin Settings page allows you to customize the plugin to fit your blog look and feel")
-
-### Where can I use this?
+### Where can I use the plugin?
 
 Naturally, you can use this for any list on your site. Here are a few examples:
+
 * Action list. Things to do. E.g. DIY instructions
 * Shopping lists. Things you will need to get something accomplished. E.g. DIY lists
 * Recipes. Inclued a list of ingredients
