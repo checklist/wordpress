@@ -4,7 +4,7 @@
   Plugin Name: Checklist
   Plugin URI: http://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
-  Version: 1.0.1
+  Version: 1.0.2
   Author: checklist
   Author URI: http://checklist.com
   License: GPLv3
