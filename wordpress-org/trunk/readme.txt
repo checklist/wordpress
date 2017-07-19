@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: trunk
+Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -63,15 +63,33 @@ We are here to help you and are very eager to hear any feedback you may have. We
 
 The Checklisters
 
+[User Guide](https://github.com/checklist/wordpress/blob/master/guide.md)
+
 [Checklist.com](https://checklist.com)
 [Contact Support](https://checklist.com/contact/) (Free)
 
 
+
 == Installation ==
-1.  unzip the contents of the zip file to the /wp-content/plugins directory
-1. Activate the plugin through the \'Plugins\' menu in WordPress
-1. Customize the checklist box look and feel from the new Checklist menu in the Admin
-1. Make any list in a post into an interactive checklist by selecting it and clicking on the Checklist button from the editor menu
+
+To get started, follow our [User Guide](https://github.com/checklist/wordpress/blob/master/guide.md).
+
+1. Start by downloading and installing the plugin in your Plugins directory (or via the WordPress one click "Install" button)
+
+2. Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy:
+
+![Selected list](assets/screenshot-3.png "Select any lists in the Wordpress post editor")
+
+3. Click on the Checklist button from the editor and get the Checklist popup to customize your checklist:
+
+![Checklist Plugin Popup](assets/screenshot-4.png "Click on the Checklist button from the Wordpress editor to get the customization popup")
+
+4. Voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
+
+5. To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
+
+![Checklist Admin Settings](assets/screenshot-5.png "The Checklist Plugin Settings page allows you to customize the plugin to fit your blog look and feel")
+
 
 == Frequently Asked Questions ==
 = How do I monetize? 
@@ -104,6 +122,11 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.0.1 =
+* Localize NL (Print)
+* Fixed an issue when on some installations the Checklist menu would not show on the admin
+
 = 1.0 =
 * Initial release
 
