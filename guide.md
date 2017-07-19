@@ -42,8 +42,10 @@ And voila: you have a [baby checklist](https://checklist.com/baby-checklist/).
 Note: If after clicking OK on the popup window you get a bullet BEFORE the created shortcode, you need to remove it. Your post should include something like this:
 
 [checklist-box title="My title" extraTitle="Read More" extraUrl="http://example.com"]
+
 * Item 1
 * Item 2
+
 [/checklist-box]
 
 To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
