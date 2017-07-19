@@ -88,7 +88,7 @@ class WP_Checklist {
         $extraStyle = 'color:'.$extraTextColor.'; background-color:'.$extraBackgroundColor.';';
         $extraButton = '';
         if (strlen($atts['extraurl'])>0 && strlen($atts['extratitle'])>0){
-            $extraButton = '<a href="'.$atts['extraurl'].'" style="'.$extraStyle.'" class="checklist-button" target="_new" rel="nofollow">'.$atts['extratitle'].'</a>';
+            $extraButton = '<a href="'.$atts['extraurl'].'" style="'.$extraStyle.'" class="checklist-button" target="_blank" rel="nofollow">'.$atts['extratitle'].'</a>';
         }
 
         // border
@@ -106,7 +106,7 @@ class WP_Checklist {
         $poweredBy = isset($settings['poweredBy']) ? $settings['poweredBy'] : 0;
         $powered = "";
         if ($poweredBy == 1){
-            $powered = '<div class="checklist-powered">Powered By <a href="https://checklist.com" target="_new">Checklist</a></div>';
+            $powered = '<div class="checklist-powered">Powered By <a href="https://checklist.com" target="_blank">Checklist</a></div>';
         }
 
         // source
@@ -117,8 +117,8 @@ class WP_Checklist {
             <div id="checklist-id-'.$counter.'" class="checklist-box" style="'.$style.'">
                 '.$title.'
                 <div class="">
-                    <a href="https://api.checklist.com/customize?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'" style="'.$saveStyle.'" class="checklist-button" target="_new"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$saveDefaultText.'</a>
-                    <a href="https://api.checklist.com/print?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'" style="'.$printStyle.'" class="checklist-button" target="_new"><img src=\''.plugins_url('images/ic_print_white_24px.php', __FILE__).'?fill='.substr($printTextColor,1).'\' width="16" height="16" class="checklist-image"/> '.esc_html__( 'Print', 'checklist-com' ).'</a>
+                    <a href="https://api.checklist.com/customize?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'" style="'.$saveStyle.'" class="checklist-button" target="_blank"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$saveDefaultText.'</a>
+                    <a href="https://api.checklist.com/print?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'" style="'.$printStyle.'" class="checklist-button" target="_blank"><img src=\''.plugins_url('images/ic_print_white_24px.php', __FILE__).'?fill='.substr($printTextColor,1).'\' width="16" height="16" class="checklist-image"/> '.esc_html__( 'Print', 'checklist-com' ).'</a>
                     '.$extraButton.'
                 </div>
                 '.do_shortcode($content).'

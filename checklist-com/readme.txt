@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -122,6 +122,9 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.0.2 =
+* replaced _new with _blank for better compatability 
 
 = 1.0.1 =
 * Localize NL (Print)
