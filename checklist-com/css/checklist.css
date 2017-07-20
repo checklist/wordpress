@@ -4,6 +4,9 @@
   margin-bottom: 10px !important;
   border-width:3px !important;
 }
+.checklist-box ul {
+  margin-left:0px !important;
+}
 .checklist-box ul li {
     list-style-type: none !important;
 }

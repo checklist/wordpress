@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 1.0.3
+Stable tag: 1.0.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,6 +125,10 @@ You probably paste the color code without the # . Please ensure you have codes l
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.0.5 =
+* fixed color picker on admin sometimes clashes with other Plugins
+* added margin:0px to the ul. You can override it in your theme css if needed
 
 = 1.0.3 =
 * fixed compatability across browsers for hiding bullets next to checkboxes 

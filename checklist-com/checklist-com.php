@@ -4,7 +4,7 @@
   Plugin Name: Checklist
   Plugin URI: http://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
-  Version: 1.0.3
+  Version: 1.0.5
   Author: checklist
   Author URI: http://checklist.com
   License: GPLv3
@@ -261,7 +261,7 @@ class WP_Checklist {
     public function checklist_com_settings_color_picker_callback($args) {
         extract( $args );
         echo '<div class="wrap">';
-        echo '<input type="text" name="'.$name.'" value="'.$value.'" class="color-picker" style="width:70px;"/>';
+        echo '<input type="text" name="'.$name.'" id="'.$id.'" value="'.$value.'" class="checklist-admin-color-picker" style="width:70px;"/>';
         echo (!empty($desc))?' <span class="description checklist-admin-color-description">'.$desc.'</span>':'';
         echo '</div>';
     }
@@ -332,6 +332,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[saveTextColor]' ,
                 'value' => $saveTextColor,
+                'id' => 'checklist-picker-saveTextColor',
                 'desc' => esc_html__( 'This is the text color of the Save button', 'checklist-com' )
             )                                        
         );
@@ -346,6 +347,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[saveBackgroundColor]' ,
                 'value' => $saveBackgroundColor,
+                'id' => 'checklist-picker-saveBackgroundColor',
                 'desc' => esc_html__( 'This is the background color of the Save button', 'checklist-com' )
             )                                        
         );
@@ -367,6 +369,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[printTextColor]' ,
                 'value' => $printTextColor,
+                'id' => 'checklist-picker-printTextColor',
                 'desc' => esc_html__( 'This is the text color of the Print button', 'checklist-com' )
             )                                        
         );
@@ -381,6 +384,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[printBackgroundColor]' ,
                 'value' => $printBackgroundColor,
+                'id' => 'checklist-picker-printBackgroundColor',
                 'desc' => esc_html__( 'This is the background color of the Print button', 'checklist-com' )
             )                                        
         );
@@ -402,6 +406,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[extraTextColor]' ,
                 'value' => $extraTextColor,
+                'id' => 'checklist-picker-extraTextColor',
                 'desc' => esc_html__( 'This is the text color of the extra button', 'checklist-com' )
             )                                        
         );
@@ -416,6 +421,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[extraBackgroundColor]' ,
                 'value' => $extraBackgroundColor,
+                'id' => 'checklist-picker-extraBackgroundColor',
                 'desc' => esc_html__( 'This is the background color of the extra button', 'checklist-com' )
             )                                        
         );
@@ -437,6 +443,7 @@ class WP_Checklist {
             array(                                      // args to be passed to call back function
                 'name' => 'checklist_settings[borderColor]' ,
                 'value' => $borderColor,
+                'id' => 'checklist-picker-borderColor',
                 'desc' => esc_html__( 'This is the color of border around the checklist', 'checklist-com' )
             )                                        
         );
