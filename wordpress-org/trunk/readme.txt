@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -112,6 +112,9 @@ When people search checklist’s database of checklist templates, your checklist
 
 Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affiliate" extraUrl="http://example.com"]. The parameters are all optional.
 
+= I have changed the colors on the admin but they do not reflect in the fron end
+
+You probably paste the color code without the # . Please ensure you have codes like #FF5722 and NOT FF5722.
 
 == Screenshots ==
 1. This is how your boring list currently looks
@@ -122,6 +125,9 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.0.3 =
+* fixed compatability across browsers for hiding bullets next to checkboxes
 
 = 1.0.2 =
 * replaced _new with _blank for better compatability 
