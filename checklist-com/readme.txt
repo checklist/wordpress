@@ -112,7 +112,7 @@ When people search checklist’s database of checklist templates, your checklist
 
 Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affiliate" extraUrl="http://example.com"]. The parameters are all optional.
 
-= I have changed the colors on the admin but they do not reflect in the fron end
+= I have changed the colors on the admin but they do not reflect in the front end
 
 You probably paste the color code without the # . Please ensure you have codes like #FF5722 and NOT FF5722.
 
