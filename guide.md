@@ -39,6 +39,10 @@ Click on the Checklist button from the editor and get the Checklist popup to cus
 
 And voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
 
+Test. Make sure all works by viewing the Post and trying to click on the Save & Print buttons. Ensure the checklist is properly printed.
+
+Tip: If you have not used proper bullets in your list, there will not be any tasks in the Print page. Go back to your Post edit page and correct it.
+
 Note: If after clicking OK on the popup window you get a bullet BEFORE the created shortcode, you need to remove it. Your post should include something like this:
 
 [checklist-box title="My title" extraTitle="Read More" extraUrl="http://example.com"]

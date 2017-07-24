@@ -28,18 +28,12 @@ class WP_Checklist {
         add_action( 'admin_menu', array( $this, 'wpa_add_menu' ));
         add_action( 'admin_init', array( $this, 'checklist_com_admin_init'));
 
-        register_activation_hook( __FILE__, array( $this, 'wpa_install' ) );
-        register_deactivation_hook( __FILE__, array( $this, 'wpa_uninstall' ) );
-
         // localization
         add_action( 'init', array( $this, 'plugin_load_textdomain' ) );
 
         // styles
         add_action( 'admin_enqueue_scripts', array( $this, 'wpa_scripts') );
         add_action( 'enqueue_scripts', array( $this, 'wpf_scripts') );
-
-        // shortcodes
-        add_shortcode('checklist-box', array( $this, 'register_checklist_box_shortcode') );
 
         // Editor Buttons
         add_filter( 'mce_external_plugins', array( $this, 'wpa_add_buttons' ) );
@@ -49,7 +43,7 @@ class WP_Checklist {
     /**
     * checklist-box ShortCode
     */
-    function register_checklist_box_shortcode($atts, $content=null) {
+    public static function register_checklist_box_shortcode($atts, $content=null) {
 
         if ($content==null){
             return '';
@@ -494,13 +488,13 @@ class WP_Checklist {
     /*
      * Actions perform on activation of plugin
      */
-    public function wpa_install() {
+    public static function wpa_install() {
     }
 
     /*
      * Actions perform on de-activation of plugin
      */
-    public function wpa_uninstall() {
+    public static function wpa_uninstall() {
         // delete any settings we have made
         unregister_setting(
             'checklist_group',
@@ -509,4 +503,9 @@ class WP_Checklist {
     }
 }
 new WP_Checklist();
+
+register_activation_hook( __FILE__, array( 'WP_Checklist', 'wpa_install' ) );
+register_deactivation_hook( __FILE__, array( 'WP_Checklist', 'wpa_uninstall' ) );
+
+add_shortcode('checklist-box', array('WP_Checklist', 'register_checklist_box_shortcode') );
 ?>

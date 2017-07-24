@@ -86,7 +86,11 @@ To get started, follow our [User Guide](https://github.com/checklist/wordpress/b
 
 4. Voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
 
-5. To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
+5. Test. Make sure all works by viewing the Post and trying to click on the Save & Print buttons. Ensure the checklist is properly printed.
+
+Tip: If you have not used proper bullets in your list, there will not be any tasks in the Print page. Go back to your Post edit page and correct it.
+
+6. To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
 
 ![Checklist Admin Settings](assets/screenshot-5.png "The Checklist Plugin Settings page allows you to customize the plugin to fit your blog look and feel")
 
@@ -115,6 +119,10 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 = I have changed the colors on the admin but they do not reflect in the front end
 
 You probably paste the color code without the # . Please ensure you have codes like #FF5722 and NOT FF5722.
+
+= I click on the Save or Print buttons on front end but there are no tasks in the checklists
+
+You probably did not use bullets for your lists. Ensure you use "Bulleted list" from the visual editor. 
 
 == Screenshots ==
 1. This is how your boring list currently looks

@@ -86,7 +86,11 @@ To get started, follow our [User Guide](https://github.com/checklist/wordpress/b
 
 4. Voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
 
-5. To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
+5. Test. Make sure all works by viewing the Post and trying to click on the Save & Print buttons. Ensure the checklist is properly printed.
+
+Tip: If you have not used proper bullets in your list, there will not be any tasks in the Print page. Go back to your Post edit page and correct it.
+
+6. To customize the overall look and feel of the plugin to fit your blog's, head over to the Checklist settings page from the WordPress admin menu:
 
 ![Checklist Admin Settings](assets/screenshot-5.png "The Checklist Plugin Settings page allows you to customize the plugin to fit your blog look and feel")
 
