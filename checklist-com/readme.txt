@@ -3,14 +3,14 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. Free with no account required.
+Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. 100% Free.
 
 == Description ==
-Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. 100% Free with no account required.
+Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more. 100% Free.
 
 People love lists! And if you run a successful blog, you probably have many lists throughout your posts. But those lists tend to be boring bullet lists such as screenshot 1 into an interactive checklist as shown in screenshot 2.
 
@@ -129,6 +129,10 @@ You probably paste the color code without the # . Please ensure you have codes l
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.0.6 =
+* Better compatability with registering the plugin hooks
+* Documentation update
 
 = 1.0.5 =
 * fixed color picker on admin sometimes clashes with other Plugins
