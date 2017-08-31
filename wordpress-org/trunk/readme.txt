@@ -120,6 +120,10 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 
 You probably paste the color code without the # . Please ensure you have codes like #FF5722 and NOT FF5722.
 
+= After clicking Save or Print I get an error page or empty page
+
+Sometimes your web server will block our server from fetching the HTML of the checklist on your site so that we can process it and save it to the user's account or print it. We suggest you look at your firewall log and unblock the calls made from our servers.
+
 == Screenshots ==
 1. This is how your boring list currently looks
 2. And this is how you turn it into a beautiful interactive checklist

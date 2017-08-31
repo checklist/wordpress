@@ -1,5 +1,7 @@
 ## Instructions
 
+cd wordpress-org
+
 To update the svn trunk:
 * svn ci -m "My comment"
 
