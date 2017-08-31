@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, check, shortcode, to-do
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 1.0.6
+Stable tag: trunk
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
