@@ -1,9 +1,9 @@
 === Checklist ===
 Contributors: checklistcom
-Tags: checklist, lists, todo, check, shortcode, to-do
+Tags: checklist, lists, todo, frontend, shortcode, todo
 Requires at least: 3.5
-Tested up to: 4.8
-Stable tag: 1.0.6
+Tested up to: 4.8.1
+Stable tag: 1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -31,8 +31,11 @@ Notice how you get the sticky relationship as the list includes a link back to y
 
 Start by installing the plugin in your Plugins directory (or via the WordPress one click install)
 
-Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy (see screenshot 3)
+Option 1 - Save & Print buttons
+Place your cursor above any list in your post, click the Checklist button in your Wordpress post editor and select "Save & Print Buttons" from the drop down menu. A shortcode will be placed above your list. You may customize the text on each of the Save or Print buttons.
 
+Option 2 - Interactive Checklist Box
+Select any bullet list (or create a new one) in your Wordpress post editor. In the following example we take a list of baby items an expecting mom should buy (see screenshot 3)
 Click on the Checklist button from the editor and get the Checklist popup to customize your checklist (screenshot 4)
 
 And voila: you have a [baby checklist](https://checklist.com/baby-checklist/). 
@@ -120,9 +123,9 @@ Sure thing. The shortcode is [checklist-box title="the title" extraTitle="Affili
 
 You probably paste the color code without the # . Please ensure you have codes like #FF5722 and NOT FF5722.
 
-= After clicking Save or Print I get an error page or empty page
+= After clicking Save or Print I get an empty page
 
-Sometimes your web server will block our server from fetching the HTML of the checklist on your site so that we can process it and save it to the user's account or print it. We suggest you look at your firewall log and unblock the calls made from our servers.
+The actual saving or printing of a checklist will only work on published posts. In addition, sometimes your web server may block our server from fetching the HTML of the checklist on your site so that we can process it and save it to the user's account or print it. We suggest you look at your firewall log and unblock the calls made from our servers.
 
 == Screenshots ==
 1. This is how your boring list currently looks
@@ -133,6 +136,9 @@ Sometimes your web server will block our server from fetching the HTML of the ch
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.1 =
+* Added Save & Print List buttons. There is a new shortcode [checklist-buttons] which allows you to place the buttons at the top of any list.
 
 = 1.0.6 =
 * Better compatability with registering the plugin hooks
