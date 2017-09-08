@@ -4,7 +4,7 @@
   Plugin Name: Checklist
   Plugin URI: http://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
-  Version: 1.1
+  Version: 1.1.1
   Author: checklist
   Author URI: http://checklist.com
   License: GPLv3
@@ -72,7 +72,7 @@ class WP_Checklist {
             $saveTextColor = isset($settings['saveTextColor']) ? $settings['saveTextColor'] : '#FFFFFF';
             $saveBackgroundColor = isset($settings['saveBackgroundColor']) ? $settings['saveBackgroundColor'] : '#FF5722';
             $saveStyle = 'color:'.$saveTextColor.'; background-color:'.$saveBackgroundColor.';';
-            $saveButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'customize?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$saveStyle.'" class="checklist-button" title="Checklist"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$atts["save"].'</a>';
+            $saveButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'save-list?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$saveStyle.'" class="checklist-button" title="Checklist"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$atts["save"].'</a>';
         }
 
         // print button
