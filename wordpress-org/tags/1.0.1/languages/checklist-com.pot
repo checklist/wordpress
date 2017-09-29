@@ -1,0 +1,151 @@
+# Copyright (C) 2017 Checklist.com
+# This file is distributed under the same license as the checklist-com package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Checklist PLUGIN_VERSION\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/checklist-com\n"
+"POT-Creation-Date: 2017-07-13 08:22:11+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+
+#: checklist-com.php
+msgid "Save"
+msgstr ""
+
+#: checklist-com.php
+msgid "Print"
+msgstr ""
+
+#: checklist-com.php
+msgid "Select the default text for the Save button. You can also set the button\'s text and background colors."
+msgstr ""
+
+#: checklist-com.php
+msgid "Select the colors for the Print button."
+msgstr ""
+
+#: checklist-com.php
+msgid "The EXTRA button allows you to link to additional info or even further monetize your list."
+msgstr ""
+
+#: checklist-com.php
+msgid "Define the default settings for your Checlist box border."
+msgstr ""
+
+#: checklist-com.php
+msgid "Play nice and let your users know in advance that the interactive Checklists are powered by Checklist.com."
+msgstr ""
+
+#: checklist-com.php
+msgid "Save Button"
+msgstr ""
+
+#: checklist-com.php
+msgid "Default Text"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the default text for the Save button. You can set it to anything you like."
+msgstr ""
+
+#: checklist-com.php
+msgid "Text Color"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the text color of the Save button"
+msgstr ""
+
+#: checklist-com.php
+msgid "Background Color"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the background color of the Save button"
+msgstr ""
+
+#: checklist-com.php
+msgid "Print Button"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the text color of the Print button"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the background color of the Print button"
+msgstr ""
+
+#: checklist-com.php
+msgid "Extra Button"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the text color of the extra button"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the background color of the extra button"
+msgstr ""
+
+#: checklist-com.php
+msgid "Border"
+msgstr ""
+
+#: checklist-com.php
+msgid "Border Color"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the color of border around the checklist"
+msgstr ""
+
+#: checklist-com.php
+msgid "Border Style"
+msgstr ""
+
+#: checklist-com.php
+msgid "This is the style of the border around the checklist"
+msgstr ""
+
+#: checklist-com.php
+msgid "Let people know the Checklists are powered by Checklist.com"
+msgstr ""
+
+#: checklist-settings.php
+msgid "Checklist Settings"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Checklist Box"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "The Title for your Checklist"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Title"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Optional"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Optional EXTRA button. Leave empty if not needed"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Extra Title"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Extra URL"
+msgstr ""
+
+#: tinymce-plugin.js
+msgid "Optional. Format: http://example.com/page"
+msgstr ""

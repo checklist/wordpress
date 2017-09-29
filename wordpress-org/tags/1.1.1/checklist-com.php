@@ -2,11 +2,11 @@
 
 /*
   Plugin Name: Checklist
-  Plugin URI: https://checklist.com/
+  Plugin URI: http://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
   Version: 1.1.1
   Author: checklist
-  Author URI: https://checklist.com
+  Author URI: http://checklist.com
   License: GPLv3
   Text Domain: checklist-com
   Domain Path: /languages
@@ -18,7 +18,7 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-if (!defined('CHECKLIST_ROOT_PATH')) define('CHECKLIST_ROOT_PATH', dirname(__FILE__));
+define( 'ROOT_PATH', dirname(__FILE__) );
 
 class WP_Checklist {
 
@@ -215,7 +215,7 @@ class WP_Checklist {
 
         $screen = get_current_screen();
         if ( strpos( $screen->base, 'checklist_settings' ) !== false ) {
-            include( CHECKLIST_ROOT_PATH . '/includes/checklist-settings.php' );
+            include( ROOT_PATH . '/includes/checklist-settings.php' );
         } 
         else {
             include( dirname(__FILE__) . '/includes/checklist-dashboard.php' );
@@ -231,8 +231,12 @@ class WP_Checklist {
 
         wp_enqueue_style( 'wp-color-picker' ); 
         wp_enqueue_script( 'wp-checklist-js',  plugins_url('js/checklist-admin.js', __FILE__), array('wp-color-picker'), null, true);	
+        // wp_register_script( 'wp-checklist-tinymce-js',  plugins_url('/js/tinymce-plugin.js', __FILE__), array('tinymce'), null, true);
         add_action ( 'after_wp_tiny_mce', array( $this, 'wpa_checklist_tinymce_extra_vars' )) ;
+
         
+        // wp_localize_script( 'wp-checklist-tinymce-js', 'extStrings', $ChecklistTranslations );
+        // wp_enqueue_script( 'wp-checklist-tinymce-js' );
     }
 
     public function wpa_add_buttons($plugin_array){
@@ -279,9 +283,6 @@ class WP_Checklist {
         wp_enqueue_style( 'wp-checklist', plugins_url('css/checklist.css', __FILE__));
     }
 
-    /**
-    * Admin pages 
-    */
     public function checklist_com_settings_save_section_callback() {
         echo "<p>".esc_html__( 'Select the default text for the Save button. You can also set the button\'s text and background colors.', 'checklist-com' )."</p>";
     }

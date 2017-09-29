@@ -1,0 +1,173 @@
+# Copyright (C) 2017 Checklist.com
+# This file is distributed under the same license as the checklist-com package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Checklist PLUGIN_VERSION\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/checklist-com\n"
+"POT-Creation-Date: 2017-07-14 14:14+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: checklist-com.php
+msgid "Save"
+msgstr "Opslaan"
+
+#: checklist-com.php
+msgid "Print"
+msgstr "Print"
+
+#: checklist-com.php
+msgid ""
+"Select the default text for the Save button. You can also set the button's "
+"text and background colors."
+msgstr ""
+"Selecteer de standaardtekst voor de knop Opslaan. U kunt ook van de "
+"tekstkleur en achtergrondkleur van de knop instellen."
+
+#: checklist-com.php
+msgid "Select the colors for the Print button."
+msgstr "Selecteer de kleuren voor de Print-knop."
+
+#: checklist-com.php
+msgid ""
+"The EXTRA button allows you to link to additional info or even further "
+"monetize your list."
+msgstr ""
+"Met de EXTRA knop kunt u een link naar aanvullende informatie of "
+"bijvoorbeeld een affiliatie link maken."
+
+#: checklist-com.php
+msgid "Define the default settings for your Checlist box border."
+msgstr "Definiëer de standaardinstellingen voor het kader van uw checklist."
+
+#: checklist-com.php
+msgid ""
+"Play nice and let your users know in advance that the interactive Checklists "
+"are powered by Checklist.com."
+msgstr ""
+"Wees lief en laat je gebruikers weten dat de interactieve Checklists worden "
+"gemaakt met Checklist.com."
+
+#: checklist-com.php
+msgid "Save Button"
+msgstr "Opslaan Knop"
+
+#: checklist-com.php
+msgid "Default Text"
+msgstr "Standaardtekst"
+
+#: checklist-com.php
+msgid ""
+"This is the default text for the Save button. You can set it to anything you "
+"like."
+msgstr ""
+"Dit is de standaardtekst voor de knop Opslaan. U kunt zelf bepalen hoe je "
+"hem wilt instellen."
+
+#: checklist-com.php
+msgid "Text Color"
+msgstr "Tekst Kleur"
+
+#: checklist-com.php
+msgid "This is the text color of the Save button"
+msgstr "Dit is de tekst kleur voor de Opslaan knop"
+
+#: checklist-com.php
+msgid "Background Color"
+msgstr "Achtergrond Kleur"
+
+#: checklist-com.php
+msgid "This is the background color of the Save button"
+msgstr "Dit is de achtergrond kleur voor de Opslaan knop"
+
+#: checklist-com.php
+msgid "Print Button"
+msgstr "Print Knop"
+
+#: checklist-com.php
+msgid "This is the text color of the Print button"
+msgstr "Dit is de tekst kleur voor de Print knop"
+
+#: checklist-com.php
+msgid "This is the background color of the Print button"
+msgstr "Dit is de achtergrondkleur voor de Print knop"
+
+#: checklist-com.php
+msgid "Extra Button"
+msgstr "Extra Knop"
+
+#: checklist-com.php
+msgid "This is the text color of the extra button"
+msgstr "Dit is de tekst kleur voor de extra knop"
+
+#: checklist-com.php
+msgid "This is the background color of the extra button"
+msgstr "Dit is de achtergrond kleur voor de extra knop"
+
+#: checklist-com.php
+msgid "Border"
+msgstr "Kader"
+
+#: checklist-com.php
+msgid "Border Color"
+msgstr "Kader Kleur"
+
+#: checklist-com.php
+msgid "This is the color of border around the checklist"
+msgstr "Dit is de kleur van het kader rondom je lijst"
+
+#: checklist-com.php
+msgid "Border Style"
+msgstr "Kader Stijl"
+
+#: checklist-com.php
+msgid "This is the style of the border around the checklist"
+msgstr "Dit is de stijl van het kader rondom je lijst"
+
+#: checklist-com.php
+msgid "Let people know the Checklists are powered by Checklist.com"
+msgstr ""
+"Laat mensen weten dat de Checklists ondersteund worden door Checklist.com"
+
+#: checklist-settings.php
+msgid "Checklist Settings"
+msgstr "Checklist Instellingen"
+
+#: tinymce-plugin.js
+msgid "Checklist Box"
+msgstr "Checklist Box"
+
+#: tinymce-plugin.js
+msgid "The Title for your Checklist"
+msgstr "De titel van je Checklist"
+
+#: tinymce-plugin.js
+msgid "Title"
+msgstr "Titel"
+
+#: tinymce-plugin.js
+msgid "Optional"
+msgstr "Optioneel"
+
+#: tinymce-plugin.js
+msgid "Optional EXTRA button. Leave empty if not needed"
+msgstr "Optioneel EXTRA knop. Laat dit leeg als je hem niet nodig hebt"
+
+#: tinymce-plugin.js
+msgid "Extra Title"
+msgstr "Extra Titel"
+
+#: tinymce-plugin.js
+msgid "Extra URL"
+msgstr "Extra URL"
+
+#: tinymce-plugin.js
+msgid "Optional. Format: http://example.com/page"
+msgstr "Optioneel. Format: http://example.com/page"
