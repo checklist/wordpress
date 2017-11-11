@@ -37,6 +37,8 @@
   margin:0 !important;
   vertical-align: -1px !important;
   display:inline !important;
+  width: 16px;
+  height: 16px;
 }
 /* Powered By */
 .checklist-powered {
