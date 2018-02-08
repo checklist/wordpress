@@ -1,0 +1,47 @@
+/* The Checklist Box */
+.checklist-box {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border-width:3px !important;
+}
+.checklist-box ul {
+  margin-left:0px !important;
+}
+.checklist-box ul li {
+    list-style-type: none !important;
+}
+.checklist-box input[type=checkbox] {
+  vertical-align: initial !important;
+  margin-right:10px !important;
+}
+/* The Checklist Buttons */
+.checklist-button {
+  display: inline-block !important;
+  margin: 10px 10px 10px 0 !important;
+  padding: 5px 12px 5px 12px !important;
+  font-size: 18px !important;
+  box-shadow: none !important;
+  -webkit-box-shadow:none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  text-decoration:none !important;
+}
+.checklist-button :focus {
+  outline: none !important;
+}
+.checklist-image {
+  box-shadow: none !important;
+  -webkit-box-shadow:none !important;
+  font-size:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  vertical-align: -1px !important;
+  display:inline !important;
+}
+/* Powered By */
+.checklist-powered {
+    font-size:13px !important;
+    padding-bottom:10px !important;
+    float:right !important;
+    text-decoration: none !important;
+}
