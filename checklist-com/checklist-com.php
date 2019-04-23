@@ -4,7 +4,7 @@
   Plugin Name: Checklist
   Plugin URI: https://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
-  Version: 1.1.4
+  Version: 1.1.5
   Author: checklist
   Author URI: https://checklist.com
   License: GPLv3
@@ -73,7 +73,7 @@ class WP_Checklist {
             $saveDefaultText = isset($settings['saveDefaultText']) ? $settings['saveDefaultText'] : esc_html__( 'Save', 'checklist-com' );
             $saveTextColor = isset($settings['saveTextColor']) ? $settings['saveTextColor'] : '#FFFFFF';
             $saveBackgroundColor = isset($settings['saveBackgroundColor']) ? $settings['saveBackgroundColor'] : '#FF5722';
-            $saveStyle = 'color:'.$saveTextColor.'; background-color:'.$saveBackgroundColor.';';
+            $saveStyle = 'color:'.$saveTextColor.' !important; background-color:'.$saveBackgroundColor.' !important;';
             $saveButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'save-list?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$saveStyle.'" class="checklist-button" title="Checklist"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$atts["save"].'</a>';
         }
 
@@ -81,7 +81,7 @@ class WP_Checklist {
         if ($atts["print"]){
             $printTextColor = isset($settings['printTextColor']) ? $settings['printTextColor'] : '#FFFFFF';
             $printBackgroundColor = isset($settings['printBackgroundColor']) ? $settings['printBackgroundColor'] : '#2196F3';
-            $printStyle = 'color:'.$printTextColor.'; background-color:'.$printBackgroundColor.';';
+            $printStyle = 'color:'.$printTextColor.' !important; background-color:'.$printBackgroundColor.' !important;';
             $printButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'print?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$printStyle.'" class="checklist-button" title="Printable Checklists"><img src=\''.plugins_url('images/ic_print_white_24px.php', __FILE__).'?fill='.substr($printTextColor,1).'\' width="16" height="16" class="checklist-image"/> '.$atts["print"].'</a>';
         }
         
@@ -122,16 +122,16 @@ class WP_Checklist {
         $saveDefaultText = isset($settings['saveDefaultText']) ? $settings['saveDefaultText'] : esc_html__( 'Save', 'checklist-com' );
         $saveTextColor = isset($settings['saveTextColor']) ? $settings['saveTextColor'] : '#FFFFFF';
         $saveBackgroundColor = isset($settings['saveBackgroundColor']) ? $settings['saveBackgroundColor'] : '#FF5722';
-        $saveStyle = 'color:'.$saveTextColor.'; background-color:'.$saveBackgroundColor.';';
+        $saveStyle = 'color:'.$saveTextColor.' !important; background-color:'.$saveBackgroundColor.' !important;';
 
         // print button
         $printTextColor = isset($settings['printTextColor']) ? $settings['printTextColor'] : '#FFFFFF';
         $printBackgroundColor = isset($settings['printBackgroundColor']) ? $settings['printBackgroundColor'] : '#2196F3';
-        $printStyle = 'color:'.$printTextColor.'; background-color:'.$printBackgroundColor.';';
+        $printStyle = 'color:'.$printTextColor.' !important; background-color:'.$printBackgroundColor.' !important;';
 
         $extraTextColor = isset($settings['extraTextColor']) ? $settings['extraTextColor'] : '#FFFFFF';
         $extraBackgroundColor = isset($settings['extraBackgroundColor']) ? $settings['extraBackgroundColor'] : '#2196F3';
-        $extraStyle = 'color:'.$extraTextColor.'; background-color:'.$extraBackgroundColor.';';
+        $extraStyle = 'color:'.$extraTextColor.' !important; background-color:'.$extraBackgroundColor.' !important;';
         $extraButton = '';
         if (strlen($atts['extraurl'])>0 && strlen($atts['extratitle'])>0){
             $extraButton = '<a href="'.$atts['extraurl'].'" style="'.$extraStyle.'" class="checklist-button" target="_blank" rel="nofollow">'.$atts['extratitle'].'</a>';
@@ -140,7 +140,7 @@ class WP_Checklist {
         // border
         $borderColor = isset($settings['borderColor']) ? $settings['borderColor'] : '#03A9F4';  
         $borderStyle = isset($settings['borderStyle']) ? $settings['borderStyle'] : 'dashed';
-        $style = 'border-style:'.$borderStyle.'; border-color:'.$borderColor.'; padding:20px;';
+        $style = 'border-style:'.$borderStyle.' !important; border-color:'.$borderColor.' !important; padding:20px;';
 
         // title
         $title = $atts["title"];

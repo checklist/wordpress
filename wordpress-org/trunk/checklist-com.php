@@ -2,11 +2,11 @@
 
 /*
   Plugin Name: Checklist
-  Plugin URI: http://checklist.com/
+  Plugin URI: https://checklist.com/
   Description: Turn any list in your blog to a beautiful interactive checklist. Print, Use, Share, Download to Mobile and more.
-  Version: 1.1.1
+  Version: 1.1.5
   Author: checklist
-  Author URI: http://checklist.com
+  Author URI: https://checklist.com
   License: GPLv3
   Text Domain: checklist-com
   Domain Path: /languages
@@ -18,7 +18,7 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-define( 'ROOT_PATH', dirname(__FILE__) );
+if (!defined('CHECKLIST_ROOT_PATH')) define('CHECKLIST_ROOT_PATH', dirname(__FILE__));
 
 class WP_Checklist {
 
@@ -60,7 +60,9 @@ class WP_Checklist {
         $settings = (array) get_option( 'checklist_settings' );
 
         // source
-        $host = parse_url(get_bloginfo('url'))['host'];
+        $siteUrl = get_home_url();
+        $parseUrl = parse_url($siteUrl);
+        $host = $parseUrl['host'];
         $source = '&utm_source='.$host.'&utm_medium=referral&utm_campaign=wordpress';
 
         $saveButton = "";
@@ -71,7 +73,7 @@ class WP_Checklist {
             $saveDefaultText = isset($settings['saveDefaultText']) ? $settings['saveDefaultText'] : esc_html__( 'Save', 'checklist-com' );
             $saveTextColor = isset($settings['saveTextColor']) ? $settings['saveTextColor'] : '#FFFFFF';
             $saveBackgroundColor = isset($settings['saveBackgroundColor']) ? $settings['saveBackgroundColor'] : '#FF5722';
-            $saveStyle = 'color:'.$saveTextColor.'; background-color:'.$saveBackgroundColor.';';
+            $saveStyle = 'color:'.$saveTextColor.' !important; background-color:'.$saveBackgroundColor.' !important;';
             $saveButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'save-list?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$saveStyle.'" class="checklist-button" title="Checklist"><img src=\''.plugins_url('images/checklist-icon.php', __FILE__).'?fill='.substr($saveTextColor,1).'\' width="16" height="16" class="svg checklist-image"/> '.$atts["save"].'</a>';
         }
 
@@ -79,7 +81,7 @@ class WP_Checklist {
         if ($atts["print"]){
             $printTextColor = isset($settings['printTextColor']) ? $settings['printTextColor'] : '#FFFFFF';
             $printBackgroundColor = isset($settings['printBackgroundColor']) ? $settings['printBackgroundColor'] : '#2196F3';
-            $printStyle = 'color:'.$printTextColor.'; background-color:'.$printBackgroundColor.';';
+            $printStyle = 'color:'.$printTextColor.' !important; background-color:'.$printBackgroundColor.' !important;';
             $printButton = '<a href="https://checklist.com" onclick="window.open(\'https://api.checklist.com/\'+\'print?id=checklist-id-'.$counter.$source.'&url='.get_permalink().'\', \'_blank\');return false;" style="'.$printStyle.'" class="checklist-button" title="Printable Checklists"><img src=\''.plugins_url('images/ic_print_white_24px.php', __FILE__).'?fill='.substr($printTextColor,1).'\' width="16" height="16" class="checklist-image"/> '.$atts["print"].'</a>';
         }
         
@@ -120,16 +122,16 @@ class WP_Checklist {
         $saveDefaultText = isset($settings['saveDefaultText']) ? $settings['saveDefaultText'] : esc_html__( 'Save', 'checklist-com' );
         $saveTextColor = isset($settings['saveTextColor']) ? $settings['saveTextColor'] : '#FFFFFF';
         $saveBackgroundColor = isset($settings['saveBackgroundColor']) ? $settings['saveBackgroundColor'] : '#FF5722';
-        $saveStyle = 'color:'.$saveTextColor.'; background-color:'.$saveBackgroundColor.';';
+        $saveStyle = 'color:'.$saveTextColor.' !important; background-color:'.$saveBackgroundColor.' !important;';
 
         // print button
         $printTextColor = isset($settings['printTextColor']) ? $settings['printTextColor'] : '#FFFFFF';
         $printBackgroundColor = isset($settings['printBackgroundColor']) ? $settings['printBackgroundColor'] : '#2196F3';
-        $printStyle = 'color:'.$printTextColor.'; background-color:'.$printBackgroundColor.';';
+        $printStyle = 'color:'.$printTextColor.' !important; background-color:'.$printBackgroundColor.' !important;';
 
         $extraTextColor = isset($settings['extraTextColor']) ? $settings['extraTextColor'] : '#FFFFFF';
         $extraBackgroundColor = isset($settings['extraBackgroundColor']) ? $settings['extraBackgroundColor'] : '#2196F3';
-        $extraStyle = 'color:'.$extraTextColor.'; background-color:'.$extraBackgroundColor.';';
+        $extraStyle = 'color:'.$extraTextColor.' !important; background-color:'.$extraBackgroundColor.' !important;';
         $extraButton = '';
         if (strlen($atts['extraurl'])>0 && strlen($atts['extratitle'])>0){
             $extraButton = '<a href="'.$atts['extraurl'].'" style="'.$extraStyle.'" class="checklist-button" target="_blank" rel="nofollow">'.$atts['extratitle'].'</a>';
@@ -138,7 +140,7 @@ class WP_Checklist {
         // border
         $borderColor = isset($settings['borderColor']) ? $settings['borderColor'] : '#03A9F4';  
         $borderStyle = isset($settings['borderStyle']) ? $settings['borderStyle'] : 'dashed';
-        $style = 'border-style:'.$borderStyle.'; border-color:'.$borderColor.'; padding:20px;';
+        $style = 'border-style:'.$borderStyle.' !important; border-color:'.$borderColor.' !important; padding:20px;';
 
         // title
         $title = $atts["title"];
@@ -154,7 +156,9 @@ class WP_Checklist {
         }
 
         // source
-        $host = parse_url(get_bloginfo('url'))['host'];
+        $siteUrl = get_home_url();
+        $parseUrl = parse_url($siteUrl);
+        $host = $parseUrl['host'];
         $source = '&utm_source='.$host.'&utm_medium=referral&utm_campaign=wordpress';
 
         return '
@@ -215,7 +219,7 @@ class WP_Checklist {
 
         $screen = get_current_screen();
         if ( strpos( $screen->base, 'checklist_settings' ) !== false ) {
-            include( ROOT_PATH . '/includes/checklist-settings.php' );
+            include( CHECKLIST_ROOT_PATH . '/includes/checklist-settings.php' );
         } 
         else {
             include( dirname(__FILE__) . '/includes/checklist-dashboard.php' );
@@ -231,12 +235,8 @@ class WP_Checklist {
 
         wp_enqueue_style( 'wp-color-picker' ); 
         wp_enqueue_script( 'wp-checklist-js',  plugins_url('js/checklist-admin.js', __FILE__), array('wp-color-picker'), null, true);	
-        // wp_register_script( 'wp-checklist-tinymce-js',  plugins_url('/js/tinymce-plugin.js', __FILE__), array('tinymce'), null, true);
         add_action ( 'after_wp_tiny_mce', array( $this, 'wpa_checklist_tinymce_extra_vars' )) ;
-
         
-        // wp_localize_script( 'wp-checklist-tinymce-js', 'extStrings', $ChecklistTranslations );
-        // wp_enqueue_script( 'wp-checklist-tinymce-js' );
     }
 
     public function wpa_add_buttons($plugin_array){
@@ -283,6 +283,9 @@ class WP_Checklist {
         wp_enqueue_style( 'wp-checklist', plugins_url('css/checklist.css', __FILE__));
     }
 
+    /**
+    * Admin pages 
+    */
     public function checklist_com_settings_save_section_callback() {
         echo "<p>".esc_html__( 'Select the default text for the Save button. You can also set the button\'s text and background colors.', 'checklist-com' )."</p>";
     }

@@ -2,8 +2,8 @@
 Contributors: checklistcom
 Tags: checklist, lists, todo, frontend, shortcode, todo
 Requires at least: 3.5
-Tested up to: 4.9
-Stable tag: 1.1.1
+Tested up to: 5.1.1
+Stable tag: 1.1.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
