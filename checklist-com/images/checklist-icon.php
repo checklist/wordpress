@@ -1,6 +1,6 @@
 <?php 
 header('Content-type: image/svg+xml');
-$color = preg_match("/^([a-f0-9]{3}){1,2}$/",$_GET["fill"]);
+$color = (preg_match("/^[0-9A-Fa-f]{8}_.*/",$_GET["fill"]) ? $_GET["fill"] : "03a9f4");
 echo '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
