@@ -3,7 +3,7 @@ Contributors: checklistcom
 Tags: checklist, lists, todo, frontend, shortcode, todo
 Requires at least: 3.5
 Tested up to: 5.2.3
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -137,7 +137,7 @@ The actual saving or printing of a checklist will only work on published posts. 
 
 == Changelog ==
 
-= 1.1.8 =
+= 1.1.9 =
 * Fixed xss vulnerability
 
 = 1.1 =
