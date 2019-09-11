@@ -2,8 +2,8 @@
 Contributors: checklistcom
 Tags: checklist, lists, todo, frontend, shortcode, todo
 Requires at least: 3.5
-Tested up to: 5.1.1
-Stable tag: 1.1.5
+Tested up to: 5.2.3
+Stable tag: 1.1.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -136,6 +136,9 @@ The actual saving or printing of a checklist will only work on published posts. 
 6. When users save your lists, they get them in the Checklist app with a link back to your article. Love those sticky visitors!
 
 == Changelog ==
+
+= 1.1.6 =
+* Fixed xss vulnerability
 
 = 1.1 =
 * Added Save & Print List buttons. There is a new shortcode [checklist-buttons] which allows you to place the buttons at the top of any list.
