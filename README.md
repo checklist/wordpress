@@ -10,6 +10,8 @@ https://wordpress.org/plugins/checklist
 
 The Checklisters
 
+https://cheecklist.com
+
 
 ## Installation instructions:
 
